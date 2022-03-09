@@ -6,7 +6,6 @@ import top.minepay.bean.TradeInfo;
  * 交易中
  *
  * @author Peter1303
- * @date Created in 2022/3/9 14:40
  */
 public interface MinePayTradingEvent {
     /**

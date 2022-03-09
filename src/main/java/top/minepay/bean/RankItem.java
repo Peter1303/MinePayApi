@@ -6,7 +6,6 @@ import lombok.Getter;
  * 排行榜
  *
  * @author Peter1303
- * @date Created in 2021/9/10 16:46
  */
 public class RankItem {
     @Getter

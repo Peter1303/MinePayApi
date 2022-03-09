@@ -9,7 +9,6 @@ import java.util.List;
  * MinePay 接口
  *
  * @author Peter1303
- * @date Created in 2022/3/8 21:30
  */
 public class MinePayApi {
     /**
