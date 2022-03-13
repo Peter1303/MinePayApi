@@ -7,11 +7,26 @@ import top.minepay.bean.TradeInfo;
  *
  * @author Peter1303
  */
-public interface MinePayCancelledEvent {
+public final class MinePayCancelledEvent extends MinePayTradeEvent {
+    private boolean cancelled = false;
+
+    public MinePayCancelledEvent(TradeInfo info) {
+        super(info);
+    }
+
     /**
      * 取消订单
      *
-     * @param tradeInfo 交易信息
+     * @param cancelled 取消
      */
-    void cancelled(TradeInfo tradeInfo);
+    public void setCancelled(boolean cancelled) {
+        this.cancelled = cancelled;
+    }
+
+    /**
+     * @return 取消
+     */
+    public boolean isCancelled() {
+        return cancelled;
+    }
 }

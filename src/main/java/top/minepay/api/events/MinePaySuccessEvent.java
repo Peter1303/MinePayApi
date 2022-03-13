@@ -7,11 +7,8 @@ import top.minepay.bean.TradeInfo;
  *
  * @author Peter1303
  */
-public interface MinePaySuccessEvent {
-    /**
-     * 交易成功
-     *
-     * @param tradeInfo 交易信息
-     */
-    void success(TradeInfo tradeInfo);
+public final class MinePaySuccessEvent extends MinePayTradeEvent {
+    public MinePaySuccessEvent(TradeInfo info) {
+        super(info);
+    }
 }

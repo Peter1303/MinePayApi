@@ -7,11 +7,8 @@ import top.minepay.bean.TradeInfo;
  *
  * @author Peter1303
  */
-public interface MinePayTradeOutDatedEvent {
-    /**
-     * 订单过期
-     *
-     * @param tradeInfo 交易信息
-     */
-    void outdated(TradeInfo tradeInfo);
+public final class MinePayTradeOutDatedEvent extends MinePayTradeEvent {
+    public MinePayTradeOutDatedEvent(TradeInfo info) {
+        super(info);
+    }
 }

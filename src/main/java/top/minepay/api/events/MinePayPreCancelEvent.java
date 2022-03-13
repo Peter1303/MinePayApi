@@ -7,11 +7,8 @@ import top.minepay.bean.TradeInfo;
  *
  * @author Peter1303
  */
-public interface MinePayPreCancelEvent {
-    /**
-     * 即将取消订单
-     *
-     * @param tradeInfo 交易信息
-     */
-    void preCancel(TradeInfo tradeInfo);
+public final class MinePayPreCancelEvent extends MinePayTradeEvent {
+    public MinePayPreCancelEvent(TradeInfo info) {
+        super(info);
+    }
 }
