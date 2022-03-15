@@ -59,22 +59,38 @@ public class TradeInfo {
     private String name;
 
     /**
-     * 创建订单信息
+     * 创建礼包订单
      *
      * @param order 订单号
      * @param name 订单名称
      * @param playerName 玩家
      * @param price 价格
-     * @param tradeType 订单类型
      * @param paymentType 支付方式
      * @return 信息
      */
-    public static TradeInfo create(String order,
-                                   String name,
-                                   String playerName,
-                                   int price,
-                                   TradeType tradeType,
-                                   PaymentType paymentType) {
+    public static TradeInfo createKit(String order,
+                                      String name,
+                                      String playerName,
+                                      int price,
+                                      PaymentType paymentType) {
+        throw new RuntimeException();
+    }
+
+    /**
+     * 创建点券订单
+     *
+     * @param order 订单号
+     * @param name 订单名称
+     * @param playerName 玩家
+     * @param count 数量
+     * @param paymentType 支付方式
+     * @return 信息
+     */
+    public static TradeInfo createPoint(String order,
+                                        String name,
+                                        String playerName,
+                                        int count,
+                                        PaymentType paymentType) {
         throw new RuntimeException();
     }
 }
