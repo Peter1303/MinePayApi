@@ -9,6 +9,7 @@ import top.minepay.enums.TradeType;
  * 交易信息
  *
  * @author Peter1303
+ * Created in 2022/3/8 20:57
  */
 public class TradeInfo {
     /**
@@ -37,6 +38,7 @@ public class TradeInfo {
     private int count;
     /**
      * 支付类型
+     *
      * @see PaymentType
      */
     @Setter
@@ -46,30 +48,38 @@ public class TradeInfo {
      * 订单类型
      * <p>点券</p>
      * <p>礼包</p>
+     *
      * @see TradeType
      */
     @Setter
     @Getter
     private TradeType tradeType;
+
     /**
-     * 订单名称
+     * 仅限创建订单
      */
-    @Setter
-    @Getter
-    private String name;
+    public TradeInfo() {
+    }
 
     /**
      * 创建礼包订单
      *
-     * @param order 订单号
-     * @param name 订单名称
-     * @param playerName 玩家
-     * @param price 价格
+     * @param order       订单号
+     * @param kitName     礼包名字
+     * @param playerName  玩家
      * @param paymentType 支付方式
      * @return 信息
      */
     public static TradeInfo createKit(String order,
-                                      String name,
+                                      String kitName,
+                                      String playerName,
+                                      PaymentType paymentType) {
+        throw new RuntimeException();
+    }
+
+    @Deprecated
+    public static TradeInfo createKit(String order,
+                                      String kitName,
                                       String playerName,
                                       int price,
                                       PaymentType paymentType) {
@@ -79,13 +89,20 @@ public class TradeInfo {
     /**
      * 创建点券订单
      *
-     * @param order 订单号
-     * @param name 订单名称
-     * @param playerName 玩家
-     * @param count 数量
+     * @param order       订单号
+     * @param playerName  玩家
+     * @param count       数量
      * @param paymentType 支付方式
      * @return 信息
      */
+    public static TradeInfo createPoint(String order,
+                                        String playerName,
+                                        int count,
+                                        PaymentType paymentType) {
+        throw new RuntimeException();
+    }
+
+    @Deprecated
     public static TradeInfo createPoint(String order,
                                         String name,
                                         String playerName,
