@@ -22,4 +22,11 @@ public final class MinePayTradingEvent extends MinePayTradeEvent {
     public void setHandled(boolean handled) {
         this.handled = handled;
     }
+
+    /**
+     * @return 是否接管
+     */
+    public boolean isHandled() {
+        return handled;
+    }
 }

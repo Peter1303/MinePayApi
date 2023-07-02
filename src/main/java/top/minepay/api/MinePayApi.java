@@ -1,5 +1,6 @@
 package top.minepay.api;
 
+import org.bukkit.entity.Player;
 import top.minepay.bean.RankItem;
 import top.minepay.bean.TradeInfo;
 
@@ -21,6 +22,14 @@ public class MinePayApi {
          * @param tradeInfo 交易信息
          */
         public static void start(TradeInfo tradeInfo) {
+        }
+
+        /**
+         * 取消交易
+         *
+         * @param player 玩家
+         */
+        public static void close(Player player) {
         }
 
         /**

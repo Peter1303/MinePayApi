@@ -9,14 +9,14 @@ import org.bukkit.event.HandlerList;
  * @author Peter1303
  */
 public abstract class MinePayEvent extends Event {
-    protected static final HandlerList handlers = new HandlerList();
+    protected static final HandlerList HANDLERS = new HandlerList();
 
     @Override
     public HandlerList getHandlers() {
-        return handlers;
+        return HANDLERS;
     }
 
     public static HandlerList getHandlerList() {
-        return handlers;
+        return HANDLERS;
     }
 }

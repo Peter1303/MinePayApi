@@ -55,10 +55,7 @@ public class TradeInfo {
     @Getter
     private TradeType tradeType;
 
-    /**
-     * 仅限创建订单
-     */
-    public TradeInfo() {
+    private TradeInfo() {
     }
 
     /**
