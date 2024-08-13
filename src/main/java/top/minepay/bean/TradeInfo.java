@@ -1,5 +1,6 @@
 package top.minepay.bean;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import top.minepay.enums.PaymentType;
@@ -11,39 +12,40 @@ import top.minepay.enums.TradeType;
  * @author Peter1303
  * Created in 2022/3/8 20:57
  */
+@Data
 public class TradeInfo {
     /**
      * 订单号
      */
-    @Setter
-    @Getter
     private String order;
+
     /**
      * 玩家 id
      */
-    @Setter
-    @Getter
     private String playerName;
+
     /**
      * 价格
      */
-    @Setter
-    @Getter
     private int price;
+
     /**
      * 点券数量
      */
-    @Setter
-    @Getter
     private int count;
+
     /**
      * 支付类型
      *
      * @see PaymentType
      */
-    @Setter
-    @Getter
     private PaymentType type;
+
+    /**
+     * 二维码原信息
+     */
+    private String qrcodeContent;
+
     /**
      * 订单类型
      * <p>点券</p>
@@ -51,8 +53,6 @@ public class TradeInfo {
      *
      * @see TradeType
      */
-    @Setter
-    @Getter
     private TradeType tradeType;
 
     private TradeInfo() {

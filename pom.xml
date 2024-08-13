@@ -6,7 +6,7 @@
 
     <groupId>top.minepay</groupId>
     <artifactId>MinePayApi</artifactId>
-    <version>1.5-RELEASE</version>
+    <version>1.6-RELEASE</version>
 
     <name>MinePayApi</name>
     <description>MinePay 接口</description>
