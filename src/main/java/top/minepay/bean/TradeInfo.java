@@ -1,10 +1,8 @@
 package top.minepay.bean;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import top.minepay.enums.PaymentType;
-import top.minepay.enums.TradeType;
+import top.minepay.common.enums.PaymentType;
+import top.minepay.common.enums.TradeType;
 
 /**
  * 交易信息

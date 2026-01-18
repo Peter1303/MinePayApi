@@ -1,4 +1,4 @@
-package top.minepay.enums;
+package top.minepay.common.enums;
 
 import lombok.Getter;
 

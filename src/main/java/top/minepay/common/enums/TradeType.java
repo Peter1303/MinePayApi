@@ -1,4 +1,4 @@
-package top.minepay.enums;
+package top.minepay.common.enums;
 
 /**
  * 交易类型
